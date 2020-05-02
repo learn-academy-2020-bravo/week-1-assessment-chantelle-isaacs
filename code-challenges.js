@@ -149,6 +149,6 @@ var toonimals = [
 // create a function that takes an array 
 const notCats = (array) =>{
     // filter the array based on the value of animal: NOR equalling cat  and return it
-    return array.filter(value => value.animal !== "cat")
+    return array.filter(value => value.animal !== "cat").map(value => value.name).join(" ")
 }
     console.log(notCats(toonimals))
